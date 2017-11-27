@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+    <ModulePrefs
+        title="All Project Areas"
+        height="400">
+            <Require feature="dynamic-height"/>
+    </ModulePrefs>
+
+    <Content type="html">
+        <![CDATA[
+            <html>
+                <head>
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+                    <script src="res/lib/jquery.min.js"></script> <!-- jquery lib file -->
+                    <script src="res/js/code.js"></script> <!-- user code resides here -->
+
+                    <style>
+                        .header,
+                        .titleArea{
+                            background-color: #4a81aa;
+                            height: 30px;
+                            color: white;
+                            font-size: smaller;
+                            padding: 5px;
+                        }
+
+                        .titleArea{
+                            background-color: #639bb9;
+                            margin-bottom:5px;
+                        }
+
+                        .button{
+                            width: 100%;
+                            border-radius: 50px;
+                            margin-bottom: 5px;
+                        }
+                    </style>
+                </head>
+
+                <body>
+                    <div class="col-md-12 header">www.CraftedForEveryone.com</div>
+                    <div class="col-md-12 titleArea">All Project Areas</div>
+                    <div class="col-md-12">
+                        <input type="button" value="Show Project Areas" class="btn btn-warning button" onclick="showAllProjectAreas()">
+                        <ul id='projectAreas'>
+                        </ul>
+                    </div>
+
+                </body>
+            </html>
+
+
+          ]]>
+    </Content>
+</Module>
